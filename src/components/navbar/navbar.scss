@@ -28,6 +28,14 @@
             span{
                 margin-right: 20px;
                 cursor: pointer;
+            
+                &.cineClick{
+                    color:red;
+                    margin-right:40px;
+                    font-size: 22.5px;
+                    font-weight: 900;
+                }
+            
             }
         }
 
@@ -70,8 +78,4 @@
             }
         }
     }
-}
-#cineclick{
-    color:red;
-    margin-right:40px;
 }

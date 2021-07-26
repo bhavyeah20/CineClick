@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="left">
                     {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/800px-Netflix_2015_logo.svg.png" alt="" /> */}
-                    <span id="cineclick">CINECLICK</span>
+                    <span className="cineClick">CINECLICK</span>
                     <span>Home</span>
                     <span>TV Shows</span>
                     <span>Movies</span>
