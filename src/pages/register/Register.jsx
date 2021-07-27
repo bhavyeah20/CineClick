@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import "./register.scss"
+
 
 const Register = () => {
     const [email, setEmail] = useState("");
@@ -22,7 +24,7 @@ const Register = () => {
             <div className="top">
                 <div className="wrapper">
                     <span className="logo">CINECLICK</span>
-                    <button className="loginButton">Sign In</button>
+                    <Link className="loginButton" to="/login">Sign In</Link>
                 </div>
             </div>
             <div className="container">
@@ -40,7 +42,7 @@ const Register = () => {
                     ) : (
                         <form className="input">
                             <input type="password" placeholder="password" ref={passwordRef} />
-                            <button className="registerButton" onClick={handleFinish} >Start!</button>
+                            <Link className="registerButton" to="/" >Start!</Link>
                         </form>
                     )
                 }
