@@ -1,82 +1,87 @@
-.navbar{
-    top: 0;
-    width: 100%;
-    color: white;
-    font-size: 14px;
-    position: fixed;
-    z-index: 999;
-    background: linear-gradient(to top, transparent 0%, rgb(0,0,0,0.3) 50%);
+@import "../../app.scss";
+.navbar {
+  top: 0;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 
-    &.scrolled{
-        background-color: var(--main-color);
+  &.scrolled {
+    background-color: var(--main-color);
+  }
+
+  .container {
+    padding: 0px 50px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      align-items: center;
+      img {
+        height: 25px;
+      }
+      span {
+        margin-right: 20px;
+        cursor: pointer;
+
+        @include tablet {
+          display: none;
+        }
+      }
+
+      h1 {
+        &.cineClick {
+          color: red;
+          margin-right: 40px;
+          font-size: 22.5px;
+          font-weight: 900;
+          text-shadow: 1px 1px 2px black;
+        }
+      }
     }
 
+    .right {
+      display: flex;
+      align-items: center;
 
-    .container{
-        padding : 0px 50px;
-        height: 70px;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-      
-        .left{
-            display: flex;
-            align-items: center;
-            img{
-                height: 25px;
-            }
-            span{
-                margin-right: 20px;
-                cursor: pointer;
-            
-                &.cineClick{
-                    color:red;
-                    margin-right:40px;
-                    font-size: 22.5px;
-                    font-weight: 900;
-                    text-shadow: 1px 1px 2px black;
-                }
-            
-            }
+      .icon {
+        margin: 0px 15px;
+        cursor: pointer;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .profile {
+        .options {
+          display: none;
+          background-color: var(--main-color);
+          border-radius: 5px;
         }
 
-        .right{
-            display: flex;
-            align-items: center;
-
-            .icon{
-                margin: 0px 15px;
-                cursor: pointer;
-            }
-
-            img{
-                width: 30px;
-                height: 30px;
-                border-radius: 5px;
-                object-fit: cover;
-                cursor: pointer;
-            }
-
-            .profile{
-                .options{
-                    display:none;
-                    background-color: var(--main-color);
-                    border-radius: 5px;
-                }
-
-                span{
-                    padding: 10px;
-                    cursor: pointer;
-                }
-
-                &:hover{
-                    .options{
-                        display: flex;
-                        flex-direction: column;
-                        position: absolute;
-                    }
-                }
-            }
+        span {
+          padding: 10px;
+          cursor: pointer;
         }
+
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
     }
+  }
 }
