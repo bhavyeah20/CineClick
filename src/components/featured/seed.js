@@ -1,3 +1,5 @@
+import { Update } from "@material-ui/icons";
+
 const featuredMovie = [
   {
     backdrop:
@@ -28,6 +30,36 @@ const featuredMovie = [
       "https://www.themoviedb.org/t/p/w500_and_h282_face/ntxArhtReGCqQSWFXk0c0Yt8uDO.jpg",
     logo: "https://www.themoviedb.org/t/p/w500/izMoUwnmOcimN9xWO3JvBKtdYM2.png",
     desc: "World War II soldier-turned-U.S. Marshal Teddy Daniels investigates the disappearance of a patient from a hospital for the criminally insane, but his efforts are compromised by his troubling visions and also by a mysterious doctor.",
+  },
+  {
+    backdrop:
+      "https://www.themoviedb.org/t/p/w500_and_h282_face/kf456ZqeC45XTvo6W9pW5clYKfQ.jpg",
+    logo: "https://www.themoviedb.org/t/p/w500/57YHzngGfuii29JCVIRwmS4Rxtr.png",
+    desc: "Joe Gardner is a middle school teacher with a love for jazz music. After a successful gig at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the You Seminar, a center in which souls develop and gain passions before being transported to a newborn child. Joe must enlist help from the other souls-in-training, like 22, a soul who has spent eons in the You Seminar, in order to get back to Earth.",
+  },
+  {
+    backdrop:
+      "https://www.themoviedb.org/t/p/w500_and_h282_face/p8QlWpFsp0LYlfXH0jCX7ZjTsth.jpg",
+    logo: "https://www.themoviedb.org/t/p/w500/6Du1dZ6LXxdrweJArWOMHglatmw.png",
+    desc: "Fletcher Reede is a fast-talking attorney and habitual liar. When his son Max blows out the candles on his fifth birthday he has just one wish - that his dad will stop lying for 24 hours. When Max's wish comes true, Fletcher discovers that his mouth has suddenly become his biggest liability.",
+  },
+  {
+    backdrop:
+      "https://www.themoviedb.org/t/p/w500_and_h282_face/z6eMgnSt6VA0Gf9dirjpkBPu0uS.jpg",
+    logo: "https://www.themoviedb.org/t/p/w500/n0wJ7MA4IcQN9606U22WlQjWb8J.png",
+    desc: "Henry is a player skilled at seducing women. But when this veterinarian meets Lucy, a girl with a quirky problem when it comes to total recall, he realizes it's possible to fall in love all over again…and again, and again. That's because the delightful Lucy has no short-term memory, so Henry must woo her day after day until he finally sweeps her off her feet.",
+  },
+  {
+    backdrop:
+      "https://www.themoviedb.org/t/p/w500_and_h282_face/qz0C4Dd36TdiO5BVPMhemUNQsL2.jpg",
+    logo: "https://www.themoviedb.org/t/p/w500/xi23eSwoibr5XeuZWBkTIBcA8O2.png",
+    desc: "Carl Fredricksen spent his entire life dreaming of exploring the globe and experiencing life to its fullest. But at age 78, life seems to have passed him by, until a twist of fate (and a persistent 8-year old Wilderness Explorer named Russell) gives him a new lease on life.",
+  },
+  {
+    backdrop:
+      "https://www.themoviedb.org/t/p/w500_and_h282_face/jP2htGBHE7vKq4MLeC75UeC0sZH.jpg",
+    logo: "https://www.themoviedb.org/t/p/w500/uUsNo7KjjwwAPBVbMeYbjutBsts.png",
+    desc: "The true story of the investigation of the 'Zodiac Killer', a serial killer who terrified the San Francisco Bay Area, taunting police with his ciphers and letters. The case becomes an obsession for three men as their lives and careers are built and destroyed by the endless trail of clues.",
   },
 ];
 

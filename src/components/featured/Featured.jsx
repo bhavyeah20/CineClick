@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./featured.scss";
 import featuredMovie from "./seed";
 
-const movie = featuredMovie[Math.floor(Math.random() * 5)];
+const movie = featuredMovie[Math.floor(Math.random() * 10)];
 
 const Featured = ({ type }) => {
   return (

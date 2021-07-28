@@ -40,15 +40,22 @@
     flex-direction: column;
 
     img {
-      width: 60vw;
+      @include mobile {
+        width: 60vw;
+      }
     }
 
     .desc {
       margin: 20px 0px;
       color: white;
       font-weight: 900;
+      width: 65vw;
 
       @include mobile {
+        width: 60vw;
+      }
+
+      @include tablet {
         width: 60vw;
       }
     }
