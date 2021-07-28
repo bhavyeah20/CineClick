@@ -39,7 +39,6 @@ const List = ({fetchUrl, listTitle}) => {
     
         fetchData();
 
-        return null;
       }, [])
 
       const getData = async () => {
@@ -57,16 +56,20 @@ const List = ({fetchUrl, listTitle}) => {
                     style = {{display : !isMoved && "none"}}
                 />
                 <div className="container" ref={listRef}>
-                    <ListItem index = {0} tmdbData={tmdbData}/>
-                    <ListItem index = {1} tmdbData={tmdbData}/>
-                    <ListItem index = {2} tmdbData={tmdbData}/>
-                    <ListItem index = {3} tmdbData={tmdbData}/>
-                    <ListItem index = {4} tmdbData={tmdbData}/>
-                    <ListItem index = {5} tmdbData={tmdbData}/>
-                    <ListItem index = {6} tmdbData={tmdbData}/>
-                    <ListItem index = {7} tmdbData={tmdbData}/>
-                    <ListItem index = {8} tmdbData={tmdbData}/>
-                    <ListItem index = {9} tmdbData={tmdbData}/>
+                    {tmdbData && (
+                    <>
+                    <ListItem index = {0} id={tmdbData.results[0].id}/>
+                    <ListItem index = {1} id={tmdbData.results[1].id}/>
+                    <ListItem index = {2} id={tmdbData.results[2].id}/>
+                    <ListItem index = {3} id={tmdbData.results[3].id}/>
+                    <ListItem index = {4} id={tmdbData.results[4].id}/>
+                    <ListItem index = {5} id={tmdbData.results[5].id}/>
+                    <ListItem index = {6} id={tmdbData.results[6].id}/>
+                    <ListItem index = {7} id={tmdbData.results[7].id}/>
+                    <ListItem index = {8} id={tmdbData.results[8].id}/>
+                    <ListItem index = {9} id={tmdbData.results[9].id}/>
+                    </>
+                    )}
 
                 </div>
                 <ArrowForwardIosOutlined className="sliderArrow right" onClick={() => handleClick("right")}/>
