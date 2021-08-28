@@ -45,7 +45,7 @@ const ListItem = ({ index, id }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {movie && <img src={`${imgBaseUrl}${movie.poster_path}`} alt="" />}
-      {isHovered && (
+      {movie && isHovered && (
         <>
           <video src={trailer} autoPlay={true} loop></video>
           <div className="itemInfo">
@@ -61,7 +61,9 @@ const ListItem = ({ index, id }) => {
             <div className="orignalTitle">
               {movie.original_title
                 ? movie.original_title
-                : movie.original_name}
+                : movie.original_name
+                ? movie.original_name
+                : ""}
             </div>
             <div className="itemInfoTop">
               <span>{movie.runtime} mins</span>
